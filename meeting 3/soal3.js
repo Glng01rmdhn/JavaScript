@@ -62,7 +62,7 @@ if (totalBelanja >= 200) {
 
 const totalBayar = totalBelanja - totalBelanja * diskon;
 
-console.log(`Total yang harus dibayar adalah Rp ${totalBayar}.`);
+console.log(`Total yang harus dibayar adalah Rp ${totalBayar}.`);   
 // soal praktel 6
 
 const thn = 18
