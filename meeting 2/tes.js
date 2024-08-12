@@ -16,7 +16,7 @@ var nu;
 console.log(null);
 
 // 4. Hitung luas segitiga, panjang alas = 5 dan tinggi = 7
-var alas =      5;
+var alas =      5; //number
 var tinggi =    7;
 var rumus =     0.5;
 console.log(alas*tinggi*rumus);
