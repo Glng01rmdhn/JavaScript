@@ -36,7 +36,7 @@ console.log(me.country);
 const {Name, Age} = me;
 console.log(Name, Age);
 
-const {Name:UserName, Age:UserAge} = Person;
+const {Name:UserName, Age:UserAge} = me;
 console.log(UserName, UserAge);
 
 // Praktek 3
