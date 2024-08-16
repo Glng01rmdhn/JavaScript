@@ -9,7 +9,7 @@ console.log(fruit);
 console.log(fruit[0]);
 console.log(fruit[1]);
 console.log(fruit[2]);
-        // memunculkan sesuai urutan dari nol 
+        // memunculkan sesuai urutan (dari nol)
 
 
 
@@ -31,6 +31,7 @@ console.log(fruit);
 
 
 // Tugas!! 4
+//menggabungkan array
 const room1 = ['hamzah', 'hafs']// ini 
 const room2 = ['ashim', 'yaqub']// dan ini
                                 // di gabungkan
@@ -41,13 +42,13 @@ console.log(roomall);
 
 
 // Tugas!! 5
-
+//Mencari elemen array
 const student = ['galang', 'hektor', 'taqi']
-console.log(student.indexOf('galang'));
+console.log(student.indexOf('galang'));// jika galang maka nol, jika hektor 1, jika taqi 2
 
 
 // Tugas!! 6
-
+//Mengurutkan array
 function compareNumbers(a, b) {
     return a - b;
   }
@@ -57,6 +58,6 @@ array3.sort();
 console.log(array3.sort(compareNumbers)); // sort di gunakan untuk mengurutkan data dari angka yang terkeci
 
 // Tugas!! 7
-
+//menghitung jumlah data dalam array
 let array4 =  [34, 7, 23, 32, 5] // [34, 7, 23, 32, 5] in datanya
 console.log(array4.length); // hasil dari ada berapa data di atas
