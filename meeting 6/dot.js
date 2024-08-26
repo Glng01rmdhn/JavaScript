@@ -24,7 +24,7 @@ console.log(fruit);
   
 // menghapus elemen array menggunakan delete
 
-delete fruit[1];// jika 0 maka manggo undefinded. Jika 1 maka apel undefinded dst
+delete fruit[0];// jika 0 maka manggo undefinded. Jika 1 maka apel undefinded dst
 
 console.log(fruit);
 

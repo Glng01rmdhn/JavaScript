@@ -12,7 +12,7 @@ var about = {
 console.log(about);
 
 // 3. Inisialisasi variabel yang tidak memiliki nilai (null) dan cetak hasilnya. 
-var nu;
+var a;
 console.log(null);
 
 // 4. Hitung luas segitiga, panjang alas = 5 dan tinggi = 7
