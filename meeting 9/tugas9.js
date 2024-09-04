@@ -1,0 +1,290 @@
+// tugas skilvul 1
+class Pelajar { 
+    constructor(nama, sekolah) {
+        this._nama = nama;
+        this._sekolah = sekolah;
+
+        // Setter untuk nama
+        this.setNama = function(nama) {
+            this._nama = nama;
+        };
+
+        // Setter untuk sekolah
+        this.setSekolah = function(sekolah) {
+            this._sekolah = sekolah;
+        };
+
+        // Getter untuk nama
+        this.getNama = function() {
+            return this._nama;
+        };
+
+        // Getter untuk sekolah
+        this.getSekolah = function() {
+            return this._sekolah;
+        };
+    }
+
+    belajar() {
+        return `${this.getNama()} belajar di ${this.getSekolah()}`;
+    }
+}
+
+const pelajar = new Pelajar("Alpha", "Skilvul");
+
+console.log(pelajar.belajar());
+
+// skilvull 2
+class PersegiPanjang {
+    constructor(panjang, lebar) {
+      this.panjang = panjang;
+      this.lebar = lebar;
+    }
+  
+    luas() {
+      let hasil = this.panjang * this.lebar;
+      return hasil;
+    }
+  
+    keliling() {
+      let hasil = 2 * (this.panjang + this.lebar);
+      return hasil;
+    }
+  }
+  
+    // Membuat instance objek persegiPanjang dengan panjang 4 dan lebar 3
+  const persegiPanjang = new PersegiPanjang(4, 3);
+  
+    // Memanggil method luas() dan keliling()
+  console.log('Luas:', persegiPanjang.luas());
+  console.log('Keliling:', persegiPanjang.keliling());
+
+  //tugas 1 drive 
+  class mobil {
+    constructor (merek,tahun) {
+        this.var_merek = merek;
+        this.var_tahun = tahun;
+
+        this.setMerek = function (merek) {
+            _merek = merek;
+        };
+
+        this.setTahun = function (tahun) {
+            _tahun = tahun;
+        };
+
+        this.getMerek = function (){
+            this._merek;
+        };
+
+        this.getTahun = function () {
+            this._tahun;
+        };
+    } 
+    spek (){
+        return `Mobil ini bermerek ${this.getMerek()} dan dikeluarkan pada tahun ${this.getTahun()}`;
+    }
+ } 
+ let mobil1 = new mobil ("yamaha", 2032);
+ console.log(mobil1.spek());
+   
+    //soal 2 drive
+    
+class pesawat {
+    constructor(jenis, kecepatan) {
+      var _jenis = jenis;
+      var _kecepatan = kecepatan;
+  
+      this.setJenis = function (jenis) {
+        _jenis = jenis;
+      };
+  
+      this.setKecepatan = function (kecepatan) {
+        _kecepatan = kecepatan;
+      };
+  
+      this.getJenis = function () {
+        return _jenis;
+      };
+  
+      this.getKecepatan = function () {
+        return _kecepatan;
+      };
+    }
+    terbang() {
+      return `Pesawat dengan jenis ${this.getJenis()} sedang terbang dengan kecepatan ${this.getKecepatan()}`;
+    }
+  }
+  
+  class jet extends pesawat {
+    constructor(jenis, kecepatan, KapasitasBahanBakar) {
+      super(jenis, kecepatan);
+      var _KapasitasBahanBAkar = KapasitasBahanBakar;
+  
+      this.setKapasitasBahanBakar = function (KapasitasBahanBakar) {
+        _KapasitasBahanBAkar = KapasitasBahanBakar;
+      };
+  
+      this.getKapasitasBahanBakar = function () {
+        return _KapasitasBahanBAkar;
+      };
+    }
+    isi() {
+      return `Pesawat dengan jenis ${this.getJenis()} sedang terbang dengan kecepatan ${this.getKecepatan()} dengan kapasitas bahan bakar ${this.getKapasitasBahanBakar()}`;
+    }
+  }
+  
+  let pesawat1 = new pesawat("airbus", 300);
+  console.log(pesawat1.terbang());
+  
+  let jet1 = new jet("airbus", 300, 1000);
+  console.log(jet1.isi());
+  
+
+
+  //tugas 3 drive
+   class karyawan {
+    constructor(nama, jabatan, gaji) {
+      var _nama = nama;
+      var _jabatan = jabatan;
+      var _gaji = gaji;
+  
+      this.setnama = function (nama) {
+        _nama = nama;
+      };
+  
+      this.setgaji = function (gaji) {
+        _gaji = gaji;
+      };
+  
+      this.setjabatan = function (jabatan) {
+        _jabatan = jabatan;
+      };
+  
+      this.getnama = function () {
+        return _nama;
+      };
+  
+      this.getgaji = function () {
+        return _gaji;
+      };
+  
+      this.getjabatan = function () {
+        return _jabatan;
+      };
+    }
+  }
+  
+  class manajer extends karyawan {
+    constructor(nama, jabatan, gaji, tunjangan) {
+      super(nama, jabatan, gaji);
+      var _tunjangan = tunjangan;
+  
+      this.settunjangan = function (tunjangan) {
+        _tunjangan = tunjangan;
+      };
+  
+      this.gettunjangan = function () {
+        return _tunjangan;
+      };
+    }
+  
+    beriTunjangan() {
+      return `Manajer ${this.getnama()} dengan jabatan ${this.getjabatan()} diberi gaji sebesar ${this.getgaji()} Rupiah dan tunjangan sebesar ${this.gettunjangan()} Rupiah`;
+    }
+  }
+  
+  let karyawan1 = new manajer("Yewon", "Manager", 5000000, 1000000);
+  
+  console.log(karyawan1.beriTunjangan());
+
+  //tugas 4 drive
+  class kendaraan {
+    constructor(kecepatan) {
+      var _kecepatan = kecepatan;
+  
+      this.setKecepatan = function (kecepatan) {
+        _kecepatan = kecepatan;
+      };
+  
+      this.getKecepatan = function () {
+        if (_kecepatan < 0) {
+          return (kecepatan = 0);
+        } else {
+          return (_kecepatan = kecepatan);
+        }
+      };
+    }
+  }
+  
+  let kendaraan1 = new kendaraan(100);
+  console.log(kendaraan1.getKecepatan());
+
+  //tugas 5 drive
+  class akunBank {
+    constructor(saldo, setoran) {
+      var _saldo = saldo;
+      var _setoran = setoran;
+      this.setSaldo = function (saldo) {
+        _saldo = saldo;
+      };
+  
+      this.setSetoran = function (setoran) {
+        _setoran = setoran;
+      };
+  
+      this.getSetoran = function () {
+        return _setoran;
+      };
+      this.getSaldo = function () {
+        if (_saldo < 0) {
+          return (saldo = Null);
+        } else {
+          return (_saldo = saldo + setoran);
+        }
+        return _saldo;
+      };
+    }
+  }
+  
+  let akun1 = new akunBank(1000, 5000);
+  console.log(akun1.getSaldo());
+
+  //tugas 6 drive
+
+  class karyawan2 {
+    constructor(nama, gaji) {
+      var _nama = nama;
+      var _gaji = gaji;
+  
+      this.setnama = function (nama) {
+        _nama = nama;
+      };
+  
+      this.setgaji = function (gaji) {
+        _gaji = gaji;
+      };
+  
+      this.getnama = function () {
+        return _nama;
+      };
+  
+      this.getgaji = function () {
+        return _gaji;
+      };
+    }
+  }
+  
+  class manajer2 extends karyawan2 {
+    constructor(nama, gaji) {
+      super(nama, gaji);
+    }
+    laporan() {
+      return `Manajer ${this.getnama()} diberi gaji sebesar ${this.getgaji()} dolar`;
+    }
+  }
+  
+  let karyawan3 = new manajer2("Jiwo", 5000);
+  console.log(karyawan3.laporan());
+
+  

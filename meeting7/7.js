@@ -62,7 +62,7 @@ console.log(myBook.getDetails());
 
 myBook.updateAuthor("Hektor");
 console.log(myBook.getDetails());
-
+    
 
 
 

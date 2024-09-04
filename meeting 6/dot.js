@@ -1,7 +1,7 @@
 // Tugas!! 1
 
 //deklarasi array
-const fruit = ['manggo','apel','banana']
+const fruit = ['manggo','apel','banana',"hello"]
 console.log(fruit);
         // memunculkan isi dari fruit
 
@@ -16,7 +16,7 @@ console.log(fruit[2]);
 
 // Tugas!! 2
 
-fruit[0] = 'manggo' // maka buah manggo akan menjadi pertama begitu pula yang lainnya
+fruit[1] = 'manggo' // maka buah manggo akan menjadi pertama begitu pula yang lainnya
 console.log(fruit);
 
 
@@ -61,3 +61,4 @@ console.log(array3.sort(compareNumbers)); // sort di gunakan untuk mengurutkan d
 //menghitung jumlah data dalam array
 let array4 =  [34, 7, 23, 32, 5] // [34, 7, 23, 32, 5] in datanya
 console.log(array4.length); // hasil dari ada berapa data di atas
+        

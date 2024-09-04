@@ -5,6 +5,8 @@ class Orang {
       this.umur = umur;
     }
   
+
+
     tidur() {
       return `${this.nama} sedang tidur`;
     }
