@@ -124,7 +124,7 @@ class pesawat {
       this.setKapasitasBahanBakar = function (KapasitasBahanBakar) {
         _KapasitasBahanBAkar = KapasitasBahanBakar;
       };
-  
+      
       this.getKapasitasBahanBakar = function () {
         return _KapasitasBahanBAkar;
       };

@@ -19,7 +19,7 @@ class Orang {
   // Tulis kode kamu di bawah ini
   class Pelajar extends Orang {
     constructor(nama, umur, namaSekolah) {
-      super(nama, umur);  
+      super (nama, umur);  
       this.namaSekolah = namaSekolah; 
     }
   
@@ -32,11 +32,11 @@ class Orang {
   
   const user = new Pelajar("Terra", 17, "Skilvul");
   
-  consogile.log(user); 
+  console.log(user); 
   console.log(user.belajar()); 
 
   //polymorphism (skilvul)
-   // tugas ini sampe seterusnya di tuntun hektor (masih gak paham)
+   // tugas ini sampe seterusnya (masih gak paham)
 
 
   class Hewan {
@@ -67,7 +67,7 @@ class Orang {
 
  // praktek 1
 
- class Vehicle {
+ class Vehicle {x
   constructor(brand) {
       this.brand = brand;
   }
@@ -142,7 +142,7 @@ class Manager extends Employee {
   }
 }
 
-let personal = new Person("Hektor");
+let personal = new Person("galang");
 console.log(personal.introduce())
 
 let personal2 = new Employee("Student");
