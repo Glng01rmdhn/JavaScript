@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kombinasi Popup</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            // Tampilkan alert selamat datang
+            alert("Selamat datang!");
+
+            // Tampilkan confirm box
+            if (confirm("Apakah Anda ingin memasukkan nama?")) {
+                // Jika pengguna memilih "OK", tampilkan prompt
+                let nama = prompt("Masukkan nama Anda:");
+                if (nama) {
+                    // Jika pengguna memasukkan nama, tampilkan alert dengan nama
+                    alert("Halo, " + nama + "! Senang bertemu dengan Anda.");
+                } else {
+                    // Jika pengguna tidak memasukkan nama, tampilkan pesan
+                    alert("Anda tidak memasukkan nama.");
+                }
+            } else {
+                // Jika pengguna memilih "Cancel", tampilkan pesan terima kasih
+                alert("Terima kasih sudah berkunjung!");
+            }
+        }
+    </script>
+</body>
+</html>

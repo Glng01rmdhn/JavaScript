@@ -1,64 +1,59 @@
-// praktek 1
-
-let hari = 'sabtu'
+//soal 1 start
+let hari = "minggu";
 
 switch (hari) {
-    case 'senin':
-        console.log("Weekday")
-        break;
-    case 'selasa':
-        console.log("Weekday")
-        break;
-    case 'rabu':
-        console.log("Weekday")
-        break;
-    case 'kamis':
-        console.log("Weekday")
-        break;
-    case 'jumaat':
-        console.log("Weekday")
-        break;
-    case 'sabtu':
-        console.log("Weekend")
-        break;
-    case 'minggu':
-        console.log("Weekend")
-        break;
-        
-    default:
-        break;
+  case "senin":
+    console.log("Weekday");
+    break;
+  case "selasa":
+    console.log("Weekday");
+    break;
+  case "rabu":
+    console.log("Weekday");
+    break;
+  case "kamis":
+    console.log("Weekday");
+    break;
+  case "jumat":
+    console.log("Weekday");
+    break;
+  case "sabtu":
+    console.log("Weekend");
+    break;
+  case "minggu":
+    console.log("Weekend");
+    break;
 }
+//soal 1 clear
 
-// Soal 2
+//soal 2 start
+for (let i = 1; i <= 25; i++) {
+  if (i % 3 === 0 && i % 8 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
+// soal 2 clear
 
+//soal 3 start
+for (let i = 0; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+//soal 3 clear
+
+//soal 4 start
 for (let i = 1; i <= 15; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log("FizzBuzz",i);
-    } else if (i % 3 === 0) {
-        console.log("Fizz",i);  
-    } else if (i % 5 === 0) {
-        consf(i%11 ===0) 
-        console.log("Buzz",i);
-    } else iole.log(i);
-    }
-
-
-// soal 3
-
-for (let angka = 1; angka <= 10; angka++) {
-
-    if (angka % 2 === 0) {
-        console.log("Genap", angka);
-    } 
-    
+  if (i % 5 === 0) {
+    console.log("multipleofthree");
+  } else {
+    console.log(i);
+  }
 }
-
-// soal 4
-
-for (let angka2 = 1; angka2 <= 15; angka2++) {
-
-    if (angka2 % 3 === 0) {
-        console.log("Genap", angka2);
-    } 
-    
-}
+//soal 4 clear

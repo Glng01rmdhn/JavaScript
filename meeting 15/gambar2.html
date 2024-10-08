@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Box</title>
+</head>
+<body>
+    <script>
+        // Fungsi untuk menampilkan confirm box dan alert box
+        function showConfirm() {
+            let confirmation = confirm("Apakah Anda yakin?");
+
+            if (confirmation) {
+                alert("Anda memilih OK");
+            } else {
+                alert("Anda memilih Cancel");
+            }
+        }
+
+        // Memanggil fungsi showConfirm() saat halaman dimuat
+        window.onload = showConfirm;
+    </script>
+</body>
+</html>

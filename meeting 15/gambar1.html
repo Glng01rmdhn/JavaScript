@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cek Angka</title>
+</head>
+<body>
+    <script>
+        function cekAngka() {
+            // Meminta pengguna memasukkan angka
+            let angka = prompt("Masukkan sebuah angka:");
+
+            // Mengubah input dari string menjadi angka
+            angka = Number(angka);
+
+            // Memeriksa nilai angka
+            if (angka > 10) {
+                alert("Angka yang Anda masukkan lebih besar dari 10.");
+            } else if (angka < 10) {
+                alert("Angka yang Anda masukkan lebih kecil dari 10.");
+            } else {
+                alert("Angka yang Anda masukkan sama dengan 10.");
+            }
+        }
+
+        // Memanggil fungsi cekAngka() saat halaman dimuat
+        cekAngka();
+    </script>
+</body>
+</html>
