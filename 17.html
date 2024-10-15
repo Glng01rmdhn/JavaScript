@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- latihan 1 START -->
+        <div>hello world</div>
+        <script>
+            const gambar = document.createElement('img');
+            gambar.setAttribute('src', "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTilmHGj-u6Q0qZAwLtHje3DTMxGCfy2DM8g&s");
+            document.body.appendChild(gambar);
+
+            const button = document.getElementsByClassName("button");
+
+        for (let i = 0; i < button.length; i++) {
+            button[i].style.borderRadius = "50px";
+        }
+        //END
+
+
+        //latihan 2 START
+        const item4 = document.createElement("li");
+        const ul = document.getElementsByClassName("ul");
+        item4.innerText = "item 4";
+        ul[0].appendChild(item4);
+
+        </script>
+        
+        <ul>
+            <li id="1">item 1</li>
+            <li id="2">item 2</li>
+            <li id="3">item 3</li>
+        </ul>
+        <!-- latihan 2 END -->
+    </body>
+    </html>
