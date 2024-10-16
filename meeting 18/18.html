@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- ONclick: digunakan untuk menangani aksi klik pada elemen -->
+     <button onclick="showMessage()">Tombol</button>
+
+     <!-- loadClick: Digunakan untuk menjalankan kode javascript setelah seluruh konten halaman dimuat.-->\
+
+     <body onload="onPageLoad()">........</body>
+
+
+     <!-- Event Listener: digunakan untuk menangani aksi klik pada elemen -->
+
+     <button id="Mybutton">TAMPOL</button>
+
+     
+     <script>
+        //onclick start
+        function showMessage(){
+            alert("welcome");
+        }
+        //onclick end
+
+        //loadClick start
+
+        function onPageLoad(){
+            alert("halaman dimuat");
+        }
+        //loadClick end
+
+        //Event Listener start
+        const button = document.getElementById("Mybutton");
+        button.addEventListener("click", function () {
+            alert("tombol diklik");
+        });
+        //Event Listener end
+     </script>
+
+
+</body>
+</html>
