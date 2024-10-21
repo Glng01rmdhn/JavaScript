@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- even custom play -->
+    <h1>Butuh sebuah kata-kata?</h1>
+    <h3 id="caption">Tekan tombol di bawah ini untuk mendapatkan sebuah kata-kata baru!</h3>
+    <button class="button" id="tombol">Dapatkan sebuah kata-kata!!</button>
+    <!-- end -->
+
+
+    <!-- Bubling & capturing play -->
+    <div id="parent">
+        <button id="child">klik saya</button>
+    </div>
+    <!-- end -->
+
+    <script>
+        // event custom start
+        const getMotivationEvents = new Event("getMotivation");
+        function motivationHandler () {
+            document.getElementById("caption").innerText ='jangan berhenti jika kau belum mencapai tujuan mu!!'
+        }
+
+        window.addEventListener("load", function () {
+            const tombol = document.getElementById("tombol");
+            window.addEventListener ("getMotivation", motivationHandler);
+            tombol.addEventListener ("click", function () {
+                window.dispatchEvent(getMotivationEvents);
+            });
+        });
+        // event custom end
+
+        // Bubling & captuing
+        document.getElementById("parent").addEventListener ("click", function () {
+            console.log("Klik di parent");
+        });
+
+        document.getElementById("child").addEventListener ("click", function (event) {
+            console.log("Klik di child");
+            event.stopPropagation();
+        }, {capure: true});
+
+
+    </script>
+</body>
+</html>
