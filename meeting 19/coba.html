@@ -35,7 +35,7 @@
         });
         // event custom end
 
-        // Bubling & captuing
+        // Bubling & captuing srart
         document.getElementById("parent").addEventListener ("click", function () {
             console.log("Klik di parent");
         });
@@ -44,6 +44,8 @@
             console.log("Klik di child");
             event.stopPropagation();
         }, {capure: true});
+
+        // Bubling & captuing end
 
 
     </script>
