@@ -19,6 +19,7 @@ function addBook() {
 
     // Menambahkan buku ke array dan memperbarui tampilan
     books.push(book);
+    updateLocalStorage();
     displayBooks();
     clearForm();
 }
@@ -62,6 +63,7 @@ function toggleBookStatus(id) {
     const book = books.find(b => b.id === id);
     if (book) {
         book.selesaiDibaca = !book.selesaiDibaca;
+        updateLocalStorage();
         displayBooks();
     }
 }
@@ -69,6 +71,7 @@ function toggleBookStatus(id) {
 // Fungsi untuk menghapus buku
 function deleteBook(id) {
     books = books.filter(book => book.id !== id);
+    updateLocalStorage();
     displayBooks();
 }
 
@@ -101,6 +104,19 @@ function searchBook() {
     });
 }
 
-// Event listener untuk tombol tambah dan cari
-document.querySelector(".section button").addEventListener("click", addBook);
-document.querySelector(".section:nth-child(4) button").addEventListener("click", searchBook);
+// Fungsi untuk memperbarui data di localStorage
+function updateLocalStorage() {
+    localStorage.setItem("books", JSON.stringify(books));
+}
+
+// Fungsi untuk mendapatkan data buku dari localStorage saat aplikasi dimuat
+function getBooksFromLocalStorage() {
+    const storedBooks = localStorage.getItem("books");
+    if (storedBooks) {
+        books = JSON.parse(storedBooks);
+        displayBooks();
+    }
+}
+
+// Panggil fungsi untuk mendapatkan data buku dari localStorage saat aplikasi dimuat
+getBooksFromLocalStorage();
